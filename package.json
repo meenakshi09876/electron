@@ -1,0 +1,20 @@
+{
+	"name": "start-electron",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "electron .",
+		"watch": "nodemon --exec electron .",
+		"build": "electron-builder"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^24.3.0",
+		"electron-builder": "^23.6.0",
+		"electron-window-state": "^5.0.3",
+		"nodemon": "^2.0.22"
+	}
+}

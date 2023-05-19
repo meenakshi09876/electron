@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron Tutorial</title>
+</head>
+
+<body style="user-select: none;-webkit-app-region:drag ;">
+  <h1 style="color: aqua;">Helloo Electron</h1>
+  <h2 style="color: blueviolet;">Code Step by step</h2>
+   <img  style="height: 150px; width: 100;" src="./image/wallpepar" alt=""> 
+   <br>
+   <br>
+    <input type="range" style="-webkit-app-region:no-drag ;">
+    <br>
+    <br>
+
+<button onclick="zoomIn()">Zoom In</button>
+ <button onclick="zoomOut()">Zoom Out</button> 
+</body>
+<script>
+  const {webFrame}=require('electron')
+ function zoomOut(){
+  webFrame.setZoomFactor(webFrame.getZoomFactor()-1)
+  }
+function zoomIn(){
+ webFrame.setZoomFactor(webFrame.getZoomFactor()+1)
+  }
+</script>
+</html>
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Tutorial</title>
+</head>
+<script>
+
+//////////////All About Ipc Render  
+     const {ipcRenderer} =window.require('electron')
+       window.ipcRenderer = require('electron').ipcRenderer;
+    //   const ipc=electron.ipcRenderer
+      function shareData () {
+        console.warn("working")
+        ipcRenderer.send("msg","hello from render")
+        ipcRenderer.on("back-msg",(event,arg)=>{
+            console.warn(arg)
+        })
+      }
+  // setInterval(() => {
+  //   console.warn("___")
+  // }, 5000);
+</script>
+<body>
+    <h1 style="color: aqua;">Hello World</h1>
+    <a href="child.html" target="_blank">Go To Child Page</a>
+    <button onclick="shareData()">Share Data</button>
+     <img src="./image/wallpepar" alt="">  -->
+    <!-- <img target="_blank" href="./image/wallpepar"></a> -->
+     <!-- <a target="_blank" href="https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?w=996&t=st=1684403840~exp=1684404440~hmac=20421eafe02a1e862408d170a1b9c2abd43f7f3e6d038d4083ad842f355c6300">open image</a> --> -->
+  <!-- <img target="_blank" href="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?w=996&t=st=1684403453~exp=1684404053~hmac=4053f71235c24160be32176dfda3de294b5722cb41d47db03eafc4bf83baf929">open image</a> -->
+  <!-- <br>
+  <br>
+     <a target="_blank" href="https://www.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_11062628.htm#query=wallpaper&position=0&from_view=keyword&track=sph">open image</a>
+   -->
+ <!-- </body>
+
+</html> --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
